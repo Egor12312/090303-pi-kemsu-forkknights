@@ -1,21 +1,23 @@
 ﻿using System;
 
 namespace ForkKnights.Group1 {
-  public class Alvin : IKnight {
+  public class MagicArcher : IKnight {
     public string name;
     public string realm;
     public int arrowCount;
     public string magicElement;
     public int experienceYears;
     public string battleCry;
+    public string favoriteWeapon;
 
-    public Alvin() {
+    public MagicArcher() {
       name = "Лесной Страж Элвин";
-      realm = "Зачарованного Леса";
+      realm = "Зачарованного леса";
       arrowCount = 999;
       magicElement = "природной магией";
       experienceYears = 200;
       battleCry = "За честь и справедливость";
+      favoriteWeapon = "Лук Ивы";
     }
 
     public string GetJobApplication() {
@@ -24,7 +26,8 @@ namespace ForkKnights.Group1 {
              "Обо мне:\n" +
              "- Владею " + magicElement + "\n" +
              "- Имею " + arrowCount + " магических стрел\n" +
-             "- Живу в лесу " + experienceYears + " лет\n\n" +
+             "- Живу в лесу " + experienceYears + " лет\n" +
+             "- Любимое оружие: " + favoriteWeapon + "\n\n" +
              "Мой девиз:\n" +
              battleCry + "\n\n" +
              "Всегда рад помочь путникам и защитить лес от зла.\n" +
