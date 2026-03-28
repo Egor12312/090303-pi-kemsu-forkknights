@@ -2,8 +2,10 @@
 
 namespace ForkKnights.Group1 {
   public class MagicArcher : IKnight {
-    public string name;
-    public string realm;
+    public string Name { get; set; }
+
+    public string Realm { get; set; }
+
     public int arrowCount;
     public string magicElement;
     public int experienceYears;
@@ -11,8 +13,8 @@ namespace ForkKnights.Group1 {
     public string favoriteWeapon;
 
     public MagicArcher() {
-      name = "Лесной Страж Элвин";
-      realm = "Зачарованного леса";
+      Name = "Лесной Страж Элвин";
+      Realm = "Зачарованного леса";
       arrowCount = 999;
       magicElement = "природной магией";
       experienceYears = 200;
@@ -22,7 +24,7 @@ namespace ForkKnights.Group1 {
 
     public string GetJobApplication() {
       return "\nПРИВЕТСТВИЕ ОТ ХРАНИТЕЛЯ ЛЕСА!\n\n" +
-             "Я " + name + " из " + realm + ".\n\n" +
+             "Я " + Name + " из " + Realm + ".\n\n" +
              "Обо мне:\n" +
              "- Владею " + magicElement + "\n" +
              "- Имею " + arrowCount + " магических стрел\n" +
@@ -32,8 +34,7 @@ namespace ForkKnights.Group1 {
              battleCry + "\n\n" +
              "Всегда рад помочь путникам и защитить лес от зла.\n" +
              "Могу научить обращению с луком и рассказать легенды древнего леса.\n\n" +
-             "До встречи в лесу!\n" +
-             name;
+             "До встречи в лесу!\n" + Name;
     }
   }
 }
