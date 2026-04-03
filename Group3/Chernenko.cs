@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ForkKnights.Group1 {
+namespace ForkKnights.Group3 {
   internal class Chernenko : IKnight {
     public int healthPoints;
     public string name;
