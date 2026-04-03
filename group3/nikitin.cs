@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace ForkKnights.Group3 {
 
   
-  public class nikitin : IKnight {
+  public class Nikitin : IKnight {
     public string Archetype { get; set; }
     public string Name;
     public string Specialization;
@@ -13,7 +13,7 @@ namespace ForkKnights.Group3 {
     public bool HasLicense;
     public List<string> PastYearLicenseList;
 
-    public nikitin() {
+    public Nikitin() {
 
       Archetype = "Изготовитель мыла";
       HasLicense = false; // Какие лицензии у Тайлера?
