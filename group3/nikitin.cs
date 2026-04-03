@@ -3,7 +3,6 @@ using System.Collections.Generic;
 
 namespace ForkKnights.Group3 {
 
-  
   public class Nikitin : IKnight {
     public string Archetype { get; set; }
     public string Name;
@@ -28,10 +27,7 @@ namespace ForkKnights.Group3 {
 
     public string GetJobApplication() {
 
-
       string licenseText = HasLicense ? "есть лицензия" : "лицензий не признаю, мы сами по себе";
-
-
 
       string JopApplicationText =
         $@"👊 Привет. Я {Name}, мой архетип — {Archetype} ({licenseText}). " +
